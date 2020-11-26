@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image</title>
+</head>
+<body style="margin: 200px">
+
+	<center>
+		<select onchange="gantigambar();" id="listgambar">
+			<option value="https://asset-a.grid.id/crop/0x0:0x0/700x465/photo/2019/05/27/3899749277.jpg">Nama Buah</option>
+			<option value="https://w7.pngwing.com/pngs/752/332/png-transparent-watermelon-juice-common-guava-fruit-watermelon-natural-foods-food-orange.png">Jambu</option>
+			<option value="https://w7.pngwing.com/pngs/871/532/png-transparent-watermelon-watermelon-natural-foods-food-melon.png">Semangka</option>
+			<option value="https://toppng.com/uploads/preview/melon-11528322837mud3shw6xg.png">Melon</option>
+			<option value="https://w7.pngwing.com/pngs/422/668/png-transparent-concord-grape-juice-common-grape-vine-wine-sultana-juice-food-blueberry-wine.png">Anggur</option>
+			<option value="https://4.bp.blogspot.com/-Haf0Go-ksn8/UYHFctswXAI/AAAAAAAAAhQ/jQq1BtNjeFw/s1600/kelapa+muda.png">Kelapa</option>
+			<option value="https://e7.pngegg.com/pngimages/730/921/png-clipart-banana-banana.png">Pisang</option>
+		</select>
+	</center>
+		<br/>
+	<img src="https://asset-a.grid.id/crop/0x0:0x0/700x465/photo/2019/05/27/3899749277.jpg" style="width: 100%" id="gambar">
+
+</body>
+<script type="text/javascript">
+	function gantigambar() {
+		let gambar = document.getElementById("listgambar").value;
+		document.getElementById("gambar").src = gambar;
+		alert("Ini Gambar " + gambar);
+	}
+</script>
+</html>
